@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: api_client
+      - image: monochrome32/api_client
     steps:
       - checkout
       - run:
