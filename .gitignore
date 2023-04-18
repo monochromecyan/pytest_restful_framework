@@ -1,0 +1,23 @@
+# Python
+*.pyc
+__pycache__/
+
+# Docker
+.dockerignore
+docker-compose.yml
+*.log
+
+# Environment variables
+.env
+*.env
+env/
+
+# Test results
+test_results/
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Miscellaneous
+.DS_Store
