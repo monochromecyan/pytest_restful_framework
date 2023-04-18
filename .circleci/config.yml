@@ -20,7 +20,7 @@ jobs:
           name: Run tests
           command: |
             source venv/bin/activate
-            pytest tests/
+            pytest api_tests/
 
 workflows:
   build_and_test:
