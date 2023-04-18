@@ -9,6 +9,22 @@ To run this test framework, you will need to have the following installed on you
 - Python 3
 - Docker Desktop
 
+## Assumptions and Challenges
+
+There is not much error handling from `https://jsonplaceholder.typicode.com` so all of my negative tests fail. In normal circumstances I would not include these but I wanted to include the logic of what these tests could be like.
+
+Further to this I would include unit testing for the api_client class to ensure ensure that the code was production ready.
+
+### Design of Framework
+
+The framework has two core directories, `api_tests` containing all api tests and `utils` which houses all the exception classes.
+
+At the root of the test framework, we have the ApiClient which makes use of OOP, allowing the tests to reuse requests.
+
+The `conftest.py` contains the fixtures for the framework, such as the `baseUrl`.
+
+As stated below this framework makes use of Docker, as well as the implmentation of CircleCI.
+
 ## Installation and Running Tests
 
 1. Clone the repository to your local machine.
@@ -74,6 +90,10 @@ docker rm $(docker ps -aq)
 ```bash
 docker rmi $(docker images -q)
 ```
+
+### CircleCI integration
+
+You can access the CircileCI builds here `https://app.circleci.com/pipelines/github/monochromecyan`. Permission will need to be granted by the author to view them.
 
 ## Configuration
 

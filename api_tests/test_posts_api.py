@@ -5,7 +5,6 @@ def test_get_posts(api_client):
     :param api_client: Test client for API requests.
     """
     response = api_client.get('/posts') 
-    response = api_client
     # Assert the status code
     assert response.status_code == 200
     response_body = response.json()
