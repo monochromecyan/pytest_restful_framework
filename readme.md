@@ -2,6 +2,10 @@
 
 This is a test framework for testing API endpoints using Python and Pytest. The tests are executed using an API client to send HTTP requests and validate the responses.
 
+# Design Challenge
+
+You can access the challenge in the `./design_challenge` directory at the root of this framework.
+
 ## Prerequisites
 
 To run this test framework, you will need to have the following installed on your Windows machine:
